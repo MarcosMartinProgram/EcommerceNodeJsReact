@@ -3,6 +3,7 @@ Para probar el funcionamiento abren el proyecto en su IDE.
 1.- Abren un terminal. 
 2.- Se posicionan en la carpeta backend.
 3.- Hacen un npm install. (así instalan lo necesario: node_modules)
+3b.- Hacen un npm install react-router-dom axios. (para que funcionen las rutas) 
 4.- Ahora se tienen que posicionar en la carpeta frontend.
 5.- Hacen un npm install. (así instalan lo necesario: node_modules)
 6.- luego tienen que tener habierto dos terminal.
