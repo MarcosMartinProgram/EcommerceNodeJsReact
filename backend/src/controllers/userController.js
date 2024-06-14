@@ -23,4 +23,20 @@ exports.getUser = async (req, res) => {
   }
 };
 
-// Otros métodos similares para getAllUsers, updateUser, deleteUser...
+exports.updateUser = async (req, res) => {
+  try {
+    const result = await User.updateUser(req.params.id, req.body);
+    res.send('User updated');
+  } catch (err) {
+    res.status(500).send('Error updating user');
+  }
+};
+
+exports.deleteUser = async (req, res) => {
+  try {
+    const result = await User.deleteUser(req.params.id);
+    res.send('User deleted');
+  } catch (err) {
+    res.status(500).send('Error deleting user');
+  }
+};
